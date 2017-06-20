@@ -12,6 +12,8 @@ import /vendor/etc/init/hw/init.modem.rc
 # *** DO NOT import the new rc file after this line ***
 
 on early-init
+    write /sys/module/drm/parameters/vblankoffdelay -1
+
     # boot perf. tune
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "0 0 0 0 0 0"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1

@@ -217,7 +217,8 @@ PRODUCT_PACKAGES += \
     WifiResOverlayX6739
 
 PRODUCT_PACKAGES += \
-    LineageApertureOverlayX6739
+    LineageApertureOverlayX6739 \
+    LineageDialerOverlayX6739
 
 # Permissions
 PRODUCT_COPY_FILES += \

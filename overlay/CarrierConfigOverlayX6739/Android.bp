@@ -7,7 +7,6 @@
 runtime_resource_overlay {
 	name: "CarrierConfigOverlayX6739",
 	theme: "CarrierConfigOverlay",
-	sdk_version: "current",
 	aaptflags: ["--keep-raw-values"],
 	product_specific: true,
 }

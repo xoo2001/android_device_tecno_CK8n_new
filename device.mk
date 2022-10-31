@@ -199,6 +199,9 @@ PRODUCT_PACKAGES += \
     TetheringResOverlayX6739 \
     WifiResOverlayX6739
 
+PRODUCT_PACKAGES += \
+    LineageApertureOverlayX6739
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \

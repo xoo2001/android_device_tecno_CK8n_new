@@ -61,7 +61,7 @@
 
 # FMRadio
 # NFBD:modify  for fm 0660->0666 TSDT-277 by jinfu.tian 20221124
-/dev/fm                   0666   media     media
+/dev/fm                   0666   system     system
 
 # ConnFem
 /dev/connfem              0660   system     system

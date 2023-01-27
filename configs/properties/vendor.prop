@@ -245,6 +245,7 @@ ro.vendor.mtk.sensor.support=yes
 ro.soc.manufacturer=Mediatek
 
 # SurfaceFlinger
+debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=10000000

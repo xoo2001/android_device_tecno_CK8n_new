@@ -263,6 +263,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat

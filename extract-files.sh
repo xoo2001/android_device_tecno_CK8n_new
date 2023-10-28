@@ -71,6 +71,9 @@ function blob_fixup {
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
             ;;
+        vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
+            sed -i 's/1.1/1.2/' "$2"
+            ;;
     esac
 }
 

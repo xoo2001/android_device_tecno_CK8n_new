@@ -1514,7 +1514,7 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/v3avpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/v3avpud.rc
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/lib/AV1SecureVdecCA.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so

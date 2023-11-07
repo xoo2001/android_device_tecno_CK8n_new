@@ -251,6 +251,7 @@ ro.surface_flinger.protected_contents=true
 ro.surface_flinger.set_idle_timer_ms=1100
 ro.surface_flinger.set_touch_timer_ms=1100
 ro.surface_flinger.uclamp.min=130
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 vendor.debug.sf.cpupolicy=1
 vendor.debug.sf.cpupolicy.base_min_bl=205

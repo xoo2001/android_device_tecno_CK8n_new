@@ -40,6 +40,11 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6893 \
+    fstab.mt6893.vendor_ramdisk
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 

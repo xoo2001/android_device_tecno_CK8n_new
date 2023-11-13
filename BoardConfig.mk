@@ -7,6 +7,9 @@
 DEVICE_PATH := device/infinix/X6739
 KERNEL_PATH := device/infinix/X6739-kernel
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod

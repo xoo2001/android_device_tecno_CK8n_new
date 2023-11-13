@@ -43,7 +43,8 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6893 \
-    fstab.mt6893.vendor_ramdisk
+    fstab.mt6893.vendor_ramdisk \
+    init.recovery.mt6893.rc
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33

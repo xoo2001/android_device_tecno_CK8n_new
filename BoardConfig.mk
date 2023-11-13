@@ -87,5 +87,9 @@ BOARD_HAS_MTK_HARDWARE := true
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 # Inherit the proprietary files
 include vendor/infinix/X6739/BoardConfigVendor.mk

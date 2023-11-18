@@ -10,6 +10,15 @@ ro.vendor.mtk_eccci_c2k=1
 ro.vendor.mtk_hifiaudio_support=1
 ro.vendor.tran.audiotimeout=true
 
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.bluetooth.a2dp_offload.disabled=true
+persist.vendor.bluetooth.leaudio_mode=ums
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled=true
+ro.vendor.bt.platform=6893
+vendor.bluetooth.ldac.abr=true
+
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1ro.vendor.sdr2hdr.by.layer.support=true

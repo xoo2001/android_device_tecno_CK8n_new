@@ -130,6 +130,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_BOARD_PLATFORM := mt6893
 BOARD_HAS_MTK_HARDWARE := true
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6893
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"

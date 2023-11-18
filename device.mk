@@ -136,6 +136,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.example \
     android.hardware.health-service.example_recovery
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport.vendor \
+    libhwbinder.vendor
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster41.vendor

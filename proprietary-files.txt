@@ -186,6 +186,11 @@ vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 
+# Connectivity
+vendor/bin/conninfra_loader
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.conninfra.rc
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service

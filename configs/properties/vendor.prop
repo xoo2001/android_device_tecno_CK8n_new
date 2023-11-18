@@ -1,3 +1,15 @@
+# Audio
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+ro.config.media_vol_default=13
+ro.vendor.mtk_audio_alac_support=1
+ro.vendor.mtk_audio_ape_support=1
+ro.vendor.mtk_audio_tuning_tool_ver=V2.2
+ro.vendor.mtk_besloudness_support=1
+ro.vendor.mtk_eccci_c2k=1
+ro.vendor.mtk_hifiaudio_support=1
+ro.vendor.tran.audiotimeout=true
+
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1ro.vendor.sdr2hdr.by.layer.support=true

@@ -50,6 +50,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Modules
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6893.cfg
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
@@ -102,7 +107,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6893 \
     fstab.mt6893.vendor_ramdisk \
-    init.recovery.mt6893.rc
+    init_conninfra.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.modem.rc \
+    init.mt6893.rc \
+    init.mt6893.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.mt6893.rc \
+    init.sensor_2_0.rc \
+    init.stnfc.rc \
+    ueventd.mt6893.rc
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33

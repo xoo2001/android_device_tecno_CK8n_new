@@ -7,6 +7,8 @@
 DEVICE_PATH := device/infinix/X6739
 KERNEL_PATH := device/infinix/X6739-kernel
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # A/B
 AB_OTA_PARTITIONS += \
     system \

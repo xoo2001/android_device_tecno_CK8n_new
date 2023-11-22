@@ -102,6 +102,9 @@ drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6893-32816-1
 ro.vendor.mtk_widevine_drm_l1_support=1
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000

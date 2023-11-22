@@ -200,6 +200,13 @@ PRODUCT_PACKAGES += \
     init.stnfc.rc \
     ueventd.mt6893.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 

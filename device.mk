@@ -123,6 +123,12 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.insmod.mt6893.cfg
 
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    libruy.vendor \
+    libtextclassifier_hash.vendor
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \

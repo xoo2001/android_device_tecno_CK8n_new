@@ -50,6 +50,26 @@
         <fqname>@1.1::IOffloadControl/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.apusys</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::INeuronApusys/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.hmp</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IApuwareHmp/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.utils</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IApuwareUtils/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.xrp</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::INeuronXrp/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
@@ -58,6 +78,11 @@
         <name>vendor.mediatek.hardware.composer_ext</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IComposerExt/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IMMAgent/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mms</name>

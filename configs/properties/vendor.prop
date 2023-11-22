@@ -1,6 +1,7 @@
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1ro.vendor.sdr2hdr.by.layer.support=true
+persist.vendor.sys.mtkaal.function=0
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali

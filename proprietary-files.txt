@@ -1010,6 +1010,10 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 
+# Chipinfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/etc/init/init.connfem.rc

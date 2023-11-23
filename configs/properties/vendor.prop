@@ -213,6 +213,9 @@ vendor.connsys.driver.ready=no
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
+# SOC
+ro.soc.manufacturer=Mediatek
+
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000

@@ -300,9 +300,9 @@ PRODUCT_PACKAGES += \
     fstab.mt6893 \
     fstab.mt6893.vendor_ramdisk \
     init_conninfra.rc \
-    init.cgroup.rc \
     init.connectivity.common.rc \
     init.modem.rc \
+    init.mt6893.power.rc \
     init.mt6893.rc \
     init.mt6893.usb.rc \
     init.mtkgki.rc \

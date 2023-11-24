@@ -102,7 +102,6 @@ trace_mmstat.ko
 tran_fre.ko
 look_around.ko
 shrink_slabd.ko
-scheduler.ko
 mtk-mbox.ko
 mtk_rpmsg_mbox.ko
 mtk_tinysys_ipi.ko
@@ -112,17 +111,9 @@ sspm.ko
 scp.ko
 mcupm.ko
 mtk_qos.ko
-mtk_perf_ioctl.ko
 atf_logger.ko
 mtk-pm-domain-disable-unused.ko
-cpufreq_sugov_ext.ko
-task_turbo.ko
 mtk_cpu_power_throttling.ko
-uload_ind.ko
-load_track.ko
-mtk_perf_common.ko
-mtk_fpsgo.ko
-fpsgo.ko
 arm_dsu_pmu.ko
 pmsr.ko
 mtk-swpm.ko
@@ -134,7 +125,6 @@ mtk-vcodec-enc-v2.ko
 mtk-vcu.ko
 mtk_jpeg.ko
 jpeg-driver.ko
-mtk_core_ctl.ko
 clk-dbg-mt6893.ko
 widevine_driver.ko
 focaltech_ft3681.ko

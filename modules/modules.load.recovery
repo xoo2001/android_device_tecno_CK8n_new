@@ -186,8 +186,6 @@ mtk_rpmsg_mbox.ko
 mtk_tinysys_ipi.ko
 mtk-socinfo.ko
 mtk-pm-domain-disable-unused.ko
-uload_ind.ko
-load_track.ko
 tran_fp.ko
 arm_dsu_pmu.ko
 clk-dbg-mt6893.ko

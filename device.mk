@@ -190,6 +190,11 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6893 \

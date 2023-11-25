@@ -11,6 +11,7 @@ ro.vendor.mtk_hifiaudio_support=1
 ro.vendor.tran.audiotimeout=true
 
 # Bluetooth
+bluetooth.device.class_of_device=90,2,12
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.bluetooth.leaudio_mode=ums

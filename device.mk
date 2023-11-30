@@ -193,6 +193,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FrameworksResOverlayX6739 \
     TetheringResOverlayX6739 \
     WifiResOverlayX6739
 

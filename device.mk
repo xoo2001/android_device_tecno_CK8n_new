@@ -193,6 +193,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    TetheringResOverlayX6739 \
     WifiResOverlayX6739
 
 # Permissions

@@ -216,6 +216,10 @@ PRODUCT_PACKAGES += \
     init.stnfc.rc \
     ueventd.mt6893.rc
 
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge

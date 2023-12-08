@@ -79,6 +79,12 @@ vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
 
+# GNSS
+ro.vendor.gps.chrdev=gps_drv_dl_v010
+ro.vendor.mtk_agps_app=1
+ro.vendor.mtk_gps_support=1
+ro.vendor.mtk_log_hide_gps=0
+
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1ro.vendor.sdr2hdr.by.layer.support=true

@@ -146,6 +146,9 @@ ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=0
 
+# Graphics
+ro.opengles.version=196610
+
 # Keymaster
 ro.hardware.kmsetkey=trustonic
 ro.vendor.keymaster_version=4.1

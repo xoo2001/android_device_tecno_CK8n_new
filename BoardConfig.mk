@@ -130,6 +130,7 @@ BOARD_HAS_MTK_HARDWARE := true
 
 # Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_TAP_TO_WAKE_NODE := /proc/gesture_function
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop

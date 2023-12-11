@@ -139,8 +139,24 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
+    libhidltransport \
     libhidltransport.vendor \
+    libhwbinder \
     libhwbinder.vendor
+
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-carrier-config-manager \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -196,6 +212,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayX6739 \
     SettingsOverlayX6739 \
     SystemUIOverlayX6739 \
+    TelephonyOverlayX6739 \
     TetheringResOverlayX6739 \
     WifiResOverlayX6739
 

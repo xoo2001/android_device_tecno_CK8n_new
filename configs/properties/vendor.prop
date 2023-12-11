@@ -149,6 +149,18 @@ ro.vendor.mtk_log_hide_gps=0
 # Graphics
 ro.opengles.version=196610
 
+# IMS
+persist.vendor.ims_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_ct_volte_support=3
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+persist.vendor.volte_support=1
+ro.telephony.iwlan_operation_mode=AP-assisted
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_data_config=1
+
 # Keymaster
 ro.hardware.kmsetkey=trustonic
 ro.vendor.keymaster_version=4.1

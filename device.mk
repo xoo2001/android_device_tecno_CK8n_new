@@ -185,6 +185,9 @@ PRODUCT_PACKAGES += \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor
 
+PRODUCT_PACKAGES += \
+    libstagefright_foundation-v33
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \

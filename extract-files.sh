@@ -58,6 +58,9 @@ function blob_fixup {
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i "s|start|enable|g" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "${2}"
+            ;;
         vendor/bin/hw/camerahalserver |\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "$PATCHELF" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"

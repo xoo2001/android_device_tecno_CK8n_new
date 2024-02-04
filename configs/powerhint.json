@@ -522,12 +522,6 @@
         "Value": "31"
       },
       {
-        "PowerHint": "INTERACTION",
-        "Node": "GpuPwrLevel",
-        "Duration": 0,
-        "Value": "7"
-      },
-      {
         "PowerHint": "LAUNCH",
         "Node": "FBTBoostTA",
         "Duration": 3000,
@@ -586,12 +580,6 @@
         "Node": "GPUBlockBoost",
         "Duration": 5000,
         "Value": "101"
-      },
-      {
-        "PowerHint": "LAUNCH",
-        "Node": "GpuPwrLevel",
-        "Duration": 0,
-        "Value": "0"
       },
       {
         "PowerHint": "CAMERA_LAUNCH",

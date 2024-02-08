@@ -524,61 +524,61 @@
       {
         "PowerHint": "LAUNCH",
         "Node": "FBTBoostTA",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "1"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "CPUPrimeClusterMaxFreq",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "3000000"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "CPUPrimeClusterMinFreq",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "3000000"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "CPUSuperClusterMaxFreq",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "2600000"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "CPUSuperClusterMinFreq",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "2600000"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "CPUEfficiencyClusterMaxFreq",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "2000000"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "CPUEfficiencyClusterMinFreq",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "2000000"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "MemFreq",
-        "Duration": 4000,
+        "Duration": 2000,
         "Value": "9999999999"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "TAUclampMin",
-        "Duration": 3000,
+        "Duration": 2000,
         "Value": "100"
       },
       {
         "PowerHint": "LAUNCH",
         "Node": "GPUBlockBoost",
-        "Duration": 5000,
+        "Duration": 2000,
         "Value": "101"
       },
       {

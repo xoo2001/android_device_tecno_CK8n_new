@@ -15,6 +15,10 @@ on charger
     write /sys/kernel/helio-dvfsrc/dvfsrc_force_vcore_dvfs_opp 255
 
 on init
+    # Set teo as cpu idle governor
+    write /sys/devices/system/cpu/cpuidle/current_governor teo
+
+    # update cpus for cpuset cgroup
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-3

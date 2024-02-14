@@ -81,12 +81,8 @@ PRODUCT_PACKAGES += \
 
 # Boot Control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery \
-    android.hardware.boot@1.2-service
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+    android.hardware.boot-service.default \
+    android.hardware.boot-service.default_recovery
 
 # Camera
 PRODUCT_PACKAGES += \

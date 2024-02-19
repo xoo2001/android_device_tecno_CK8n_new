@@ -245,16 +245,15 @@ ro.soc.manufacturer=Mediatek
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
-debug.sf.early.app.duration=20000000
-debug.sf.early.sf.duration=27600000
-debug.sf.earlyGl.app.duration=20000000
-debug.sf.earlyGl.sf.duration=27600000
+debug.sf.early.app.duration=16600000
+debug.sf.early.sf.duration=16600000
+debug.sf.earlyGl.app.duration=16600000
+debug.sf.earlyGl.sf.duration=16600000
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=0
 debug.sf.frame_rate_multiple_threshold=60
-debug.sf.hwc.min.duration=23000000
-debug.sf.late.app.duration=20000000
-debug.sf.late.sf.duration=27600000
+debug.sf.late.app.duration=16600000
+debug.sf.late.sf.duration=10500000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
@@ -269,20 +268,6 @@ ro.surface_flinger.set_idle_timer_ms=1100
 ro.surface_flinger.set_touch_timer_ms=1100
 ro.surface_flinger.uclamp.min=130
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
-
-vendor.debug.sf.cpupolicy=1
-vendor.debug.sf.cpupolicy.base_min_bl=205
-vendor.debug.sf.cpupolicy.boost_idle_bl=1
-vendor.debug.sf.cpupolicy.hw_comp_suspend=1
-vendor.debug.sf.cpupolicy.max_correct_offset=170
-vendor.debug.sf.cpupolicy.min_60=80
-vendor.debug.sf.cpupolicy.min_boost=70
-vendor.debug.sf.cpupolicy.re_hfr=1
-vendor.debug.sf.cpupolicy.sf_cpu_thres=120
-vendor.debug.sf.cpupolicy.sus_mid=1
-vendor.debug.sf.cpupolicy.upbound_uclamp_max_ll=110
-vendor.debug.sf.cpupolicy.vp_lp_suspend=1
-vendor.debug.sf.cpupolicy.xgf_min=25
 
 # TEE
 ro.mtk_key_manager_support=1

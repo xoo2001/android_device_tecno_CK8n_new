@@ -71,6 +71,12 @@ function blob_fixup {
         vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
             sed -i '/vts/Q' "$2"
             ;;
+        vendor/bin/mnld |\
+        vendor/lib*/libaalservice.so |\
+        vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so |\
+        vendor/lib64/libcam.utils.sensorprovider.so)
+            grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            ;;
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
             ;;

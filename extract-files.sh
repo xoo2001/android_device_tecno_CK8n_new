@@ -78,6 +78,9 @@ function blob_fixup {
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
             grep -q "libstagefright_foundation-v33.so" "${2}" || "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/lib64/libwifi-hal-mtk.so)
+            "$PATCHELF" --set-soname "libwifi-hal-mtk.so" "${2}"
+            ;;
     esac
 }
 

@@ -63,47 +63,9 @@ on charger
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
 
-#MD: fajiang.tan delete CHJHBYY-8 for cancel cache partition under charger mode, 20210518, start
-    #exec /system/bin/e2fsck -f -p /dev/block/by-name/cache
-    #mount ext4 /dev/block/by-name/cache /cache rw wait
-    #exec /system/bin/e2fsck -f -p /dev/block/platform/bootdevice/by-name/cache
-    #mount ext4 /dev/block/platform/bootdevice/by-name/cache /cache rw wait
-#MD: fajiang.tan delete CHJHBYY-8 for cancel cache partition under charger mode, 20210518, end
-
-    chmod 0660 /dev/spm
-    chown system system /dev/spm
-    start spm_script
-    chmod 0666 /dev/kmsg
-    chmod 0775 /mnt/vendor
-    mkdir /mnt/vendor/nvcfg
-    #BSP:add mtk patchs  CKJNHJ-4545 by zhenglong.hong 20230420 start
-    mount ext4 /dev/block/by-name/nvcfg /mnt/vendor/nvcfg rw wait
-    #BSP:add mtk patchs CKJNHJ-4545 by zhenglong.hong 20230420 end
-    chown system system /mnt/vendor/nvcfg
-    chmod 0771 /mnt/vendor/nvcfg
-    restorecon_recursive /mnt/vendor/nvcfg
-    write /sys/devices/platform/battery_meter/FG_daemon_log_level 7
-    write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
-    # Permissions for System Server and daemons.
-    chown system system /sys/power/autosleep
-    chown system system /sys/power/state
-    chown system system /sys/power/wakeup_count
-    chown radio wakelock /sys/power/wake_lock
-    chown radio wakelock /sys/power/wake_unlock
-    chmod 0660 /sys/power/state
-    chmod 0660 /sys/power/wake_lock
-    chmod 0660 /sys/power/wake_unlock
-    chmod 0660 /sys/power/wakeup_count
-    write /sys/power/pm_freeze_timeout 2000
-
-    start fuelgauged
-    start fuelgauged_nvram
-
-    chown system system /sys/class/leds/lcd-backlight/brightness
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/green/brightness
-
-    start vendor.light-default
+    # Configure default brightness and switch to drm backlight trigger.
+    write /sys/class/leds/lcd-backlight/brightness 1000
+    write /sys/class/leds/lcd-backlight/trigger "backlight-drm"
 
 on fs
     start vendor.boot-hal-1-2

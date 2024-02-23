@@ -55,6 +55,9 @@ fi
 
 function blob_fixup {
     case "$1" in
+        vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i "s|start|enable|g" "${2}"
+            ;;
         vendor/bin/hw/camerahalserver |\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "$PATCHELF" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"

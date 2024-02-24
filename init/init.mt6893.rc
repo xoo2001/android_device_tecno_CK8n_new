@@ -114,9 +114,6 @@ on fs
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/by-name/userdata
     #BSP:add mtk patchs  CKJNHJ-4545 by zhenglong.hong 20230420 end
 
-on fs
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
 

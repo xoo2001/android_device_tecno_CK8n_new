@@ -368,7 +368,7 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.x6739
+    android.hardware.usb.gadget-service.mediatek
 
 # Vibrator
 VIBRATOR_SUPPORTS_EFFECTS := true

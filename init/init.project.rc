@@ -114,9 +114,3 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/top-app/cpu.shares 5120
     write /dev/cpuctl/foreground/cpu.shares 4196
 #SPD: modify cpuctl cpu.shares by yifei.liu at 20240327 end
-
-
-#BSP: add memfusion2.2 for LH7NUH89-10 by zenghui.li 20240322 start
-on property:sys.boot_completed=1 && property:persist.vendor.swapfile_enable=true && property:ro.vendor.memfusion2_2.support=true
-    swapon_all /vendor/etc/memfusion2/fstab.enableswap_wb
-#BSP: add memfusion2.2 for LH7NUH89-10 by zenghui.li 20240322 end

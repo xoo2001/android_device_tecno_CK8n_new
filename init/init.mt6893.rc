@@ -1114,11 +1114,3 @@ service osi /system/bin/osi
     disabled
     oneshot
     #seclabel u:r:osi:s0
-
-#SPD : add XLBYYHBWQ-3103 for memfusion2.2 by zihan.ju 20230821 start
-on property:persist.vendor.swapfile_enable=false
-    swapon_all /vendor/etc/fstab.enableswap
-
-on property:persist.vendor.swapfile_enable=true && property:ro.vendor.memfusion2_2.support=false
-    swapon_all /vendor/etc/fstab.enableswap
-#SPD : add XLBYYHBWQ-3103 for memfusion2.2 by zihan.ju 20230821 end

@@ -323,6 +323,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6893 \
     fstab.mt6893.vendor_ramdisk \
+    fstab.zram \
     init_conninfra.rc \
     init.connectivity.common.rc \
     init.modem.rc \

@@ -16,6 +16,6 @@
 <resources>
 
      <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-     <string name="def_device_name_simple">Infinix GT 10 Pro</string>
+     <string name="def_device_name_simple" translatable="false">Infinix GT 10 Pro</string>
 
 </resources>

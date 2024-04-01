@@ -1,6 +1,7 @@
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
+ro.audio.monitorRotation=true
 ro.config.media_vol_default=13
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1

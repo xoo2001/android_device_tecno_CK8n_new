@@ -207,6 +207,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayX6739 \
     FrameworksResOverlayX6739 \
     SettingsOverlayX6739 \
     SystemUIOverlayX6739 \

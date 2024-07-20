@@ -51,7 +51,6 @@ on post-fs-data
     write /sys/block/dm-4/queue/read_ahead_kb 2048
     write /sys/block/dm-5/queue/read_ahead_kb 2048
 
-    write /proc/sys/kernel/sched_pelt_multiplier 4
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
     write /sys/kernel/helio-dvfsrc/dvfsrc_force_vcore_dvfs_opp 0
 

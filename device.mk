@@ -352,7 +352,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_sensors
+    libshim_sensors \
+    libui_shim
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33

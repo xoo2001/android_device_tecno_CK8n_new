@@ -74,6 +74,9 @@ function blob_fixup {
         vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
             sed -i 's/1.1/1.2/' "$2"
             ;;
+        vendor/lib*/hw/audio.primary.mt6893.so)
+            "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+            ;;
     esac
 }
 

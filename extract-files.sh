@@ -76,6 +76,7 @@ function blob_fixup {
             ;;
         vendor/lib*/hw/audio.primary.mt6893.so)
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+            grep -q "libstagefright_foundation-v33.so" "${2}" || "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
     esac
 }

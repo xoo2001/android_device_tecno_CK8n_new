@@ -217,7 +217,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayX6739 \
     FrameworksResOverlayX6739 \
     PowerOffAlarmOverlayX6739 \
     SettingsOverlayX6739 \

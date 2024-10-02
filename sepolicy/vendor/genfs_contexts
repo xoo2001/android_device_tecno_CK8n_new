@@ -10,10 +10,6 @@ genfscon sysfs /devices/platform/soc/14800000.dp_tx/extcon                      
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon1                                                              u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/extcon_usb1/extcon/extcon2                                                             u:object_r:sysfs_extcon:s0
 
-# GPU
-genfscon sysfs /devices/platform/13000000.mali/devfreq/13000000.mali/min_freq                                           u:object_r:vendor_sysfs_gpu:s0
-genfscon sysfs /devices/platform/13000000.mali/devfreq/13000000.mali/max_freq                                           u:object_r:vendor_sysfs_gpu:s0
-
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                                     u:object_r:sysfs_sub_torch_file:s0
 genfscon sysfs /devices/virtual/torch/torch/torch_level                                                                 u:object_r:sysfs_torch_file:s0

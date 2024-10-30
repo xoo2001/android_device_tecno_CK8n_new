@@ -23,6 +23,7 @@ PRODUCT_MODEL := Infinix X6739
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sys_tssi_64_armv82_infinix-user 14 UP1A.231005.007 722992 release-keys"
-
-BUILD_FINGERPRINT := Infinix/X6739-GL/Infinix-X6739:14/UP1A.231005.007/241017V722:user/release-keys
+    BuildDesc="sys_tssi_64_armv82_infinix-user 14 UP1A.231005.007 722992 release-keys" \
+    BuildFingerprint=Infinix/X6739-GL/Infinix-X6739:14/UP1A.231005.007/241017V722:user/release-keys \
+    SystemDevice=Infinix-X6739 \
+    SystemName=X6739-GL

@@ -18,4 +18,25 @@
      <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
      <string name="def_device_name_simple" translatable="false">Infinix GT 10 Pro</string>
 
+    <!-- Disable UI touch sounds by default -->
+    <bool name="def_sound_effects_enabled">false</bool>
+
+    <!-- Default screen brightness, from 0 to 255. 78 is 30%. -->
+    <integer name="def_screen_brightness">50</integer>
+    <bool name="def_screen_brightness_automatic_mode">false</bool>
+
+    <!-- 1 minute for default screen timeout -->
+    <integer name="def_screen_off_timeout">60000</integer>
+
+    <!-- Disable bluetooth by default -->
+    <bool name="def_bluetooth_on">false</bool>
+
+    <!-- Disable dial pad tones by default -->
+    <bool name="def_dtmf_tones_enabled">false</bool>
+
+    <!-- Enable screen locking sounds by default -->
+    <integer name="def_lockscreen_sounds_enabled">1</integer>
+
+    <!-- Enable vibrate for calls by default -->
+    <bool name="def_vibrate_when_ringing">true</bool>
 </resources>

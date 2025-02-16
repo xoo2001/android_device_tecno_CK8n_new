@@ -306,6 +306,10 @@ include $(LOCAL_PATH)/vendor_logtag.mk
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \

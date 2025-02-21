@@ -5,6 +5,10 @@ genfscon sysfs /devices/platform/mtk_ctd/power_supply/mtk_charger_type          
 # Display
 genfscon sysfs /kernel/tran_display/lcm_name                                                                            u:object_r:sysfs_lcm_name_file:s0
 
+# DT2W
+genfscon proc /gesture_function                                                                                         u:object_r:proc_gesture_function:s0
+genfscon proc /gesture_state                                                                                            u:object_r:proc_gesture_state:s0
+
 # Extcon
 genfscon sysfs /devices/platform/soc/14800000.dp_tx/extcon                                                              u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon1                                                              u:object_r:sysfs_extcon:s0

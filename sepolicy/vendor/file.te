@@ -9,6 +9,10 @@ type vendor_watermark_data_file, file_type, data_file_type, mlstrustedobject;
 # Display
 type sysfs_lcm_name_file, fs_type, sysfs_type;
 
+# DT2W
+type proc_gesture_function, fs_type, proc_type, sysfs_type;
+type proc_gesture_state, fs_type, proc_type, sysfs_type;
+
 # Torch
 type sysfs_sub_torch_file, fs_type, sysfs_type;
 type sysfs_torch_file, fs_type, sysfs_type;

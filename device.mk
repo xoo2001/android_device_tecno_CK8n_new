@@ -377,6 +377,12 @@ VIBRATOR_SUPPORTS_EFFECTS := true
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek.x6739
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libbinder-v31 \
+    libhidlbase-v31 \
+    libutils-v31
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \

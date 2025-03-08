@@ -8,8 +8,6 @@ DEVICE_PATH := device/infinix/X6739
 KERNEL_PATH := device/infinix/X6739-kernel
 
 # A/B
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     system \
     system_ext \

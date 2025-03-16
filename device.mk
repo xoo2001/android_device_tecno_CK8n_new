@@ -219,6 +219,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageApertureOverlayX6739 \
     LineageDialerOverlayX6739 \
+    LineageSDKOverlayX6739 \
     LineageSettingsOverlayX6739
 
 # Permissions

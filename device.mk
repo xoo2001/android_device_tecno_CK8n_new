@@ -367,9 +367,9 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-convert-shared.vendor \
     libbase_shim \
     libprocessgroup_shim \
-    libshim_sensors \
     libui_shim
 
 # Shipping API level

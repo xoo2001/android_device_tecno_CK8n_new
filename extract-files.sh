@@ -108,7 +108,7 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so |\
         vendor/lib64/libcam.utils.sensorprovider.so)
             [ "$2" = "" ] && return 0
-            grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            grep -q "android.hardware.sensors@1.0-convert-shared.so" "$2" || "$PATCHELF" --add-needed "android.hardware.sensors@1.0-convert-shared.so" "$2"
             ;;
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             [ "$2" = "" ] && return 0

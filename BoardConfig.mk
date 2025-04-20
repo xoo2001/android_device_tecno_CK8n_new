@@ -71,6 +71,9 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 TARGET_BOOTLOADER_BOARD_NAME := x6739u_h931
 TARGET_NO_BOOTLOADER := true
 
+# Display
+TARGET_SCREEN_DENSITY := 480
+
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 

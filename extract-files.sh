@@ -55,6 +55,7 @@ fi
 
 function blob_fixup {
     case "$1" in
+        system_ext/etc/init/init.vtservice.rc |\
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i "s|start|enable|g" "${2}"
             ;;

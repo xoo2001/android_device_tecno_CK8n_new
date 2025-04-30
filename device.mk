@@ -103,6 +103,13 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk_platform.vendor
+
 # Modules
 PRODUCT_PACKAGES += \
     init.insmod.sh \

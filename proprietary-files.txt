@@ -409,6 +409,11 @@ vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 vendor/lib64/libfgauge_gm30.so
 
+# Light
+vendor/bin/hw/android.hardware.lights-service.mediatek
+vendor/etc/init/lights-mtk-default.rc
+vendor/etc/vintf/manifest/lights-mtk-default.xml
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon

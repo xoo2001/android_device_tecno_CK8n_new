@@ -489,6 +489,13 @@ vendor/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
+# NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service-st
+vendor/bin/nfcstackp-vendor
+vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
+vendor/lib/nfc_nci.st21nfc.st.so
+vendor/lib64/nfc_nci.st21nfc.st.so
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon

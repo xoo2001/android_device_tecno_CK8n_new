@@ -139,6 +139,9 @@ drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6893-32816-1
 ro.vendor.mtk_widevine_drm_l1_support=1
 
+# Gatekeeper
+ro.hardware.gatekeeper=trustonic
+
 # Keymaster
 ro.hardware.kmsetkey=trustonic
 ro.vendor.keymaster_version=4.1

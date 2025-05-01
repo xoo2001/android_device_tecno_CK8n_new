@@ -1814,6 +1814,21 @@ vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
 
+# TEE
+vendor/bin/hw/vendor.trustonic.tee@1.1-service
+vendor/etc/init/tee.rc
+vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+vendor/lib/libTEECommon.so
+vendor/lib/libthha.so
+vendor/lib64/libTEECommon.so
+vendor/lib64/libthha.so
+vendor/lib64/vendor.trustonic.tee.tui@1.0.so
+vendor/lib64/vendor.trustonic.tee@1.0.so
+vendor/lib64/vendor.trustonic.tee@1.1.so
+vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
+vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
+vendor/thh/ta/df1edda8627911e980ae507b9d9a7e7d.ta
+
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent

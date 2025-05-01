@@ -1222,6 +1222,9 @@ vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/valhall-1691526.wa
 vendor/firmware/wifi.cfg
 
+# FM
+vendor/etc/init/init.fmradio_drv.rc
+
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram

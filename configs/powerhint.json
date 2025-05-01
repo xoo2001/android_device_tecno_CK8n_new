@@ -475,33 +475,9 @@
       },
       {
         "PowerHint": "INTERACTION",
-        "Node": "CPUSuperClusterMinFreq",
-        "Duration": 0,
-        "Value": "1335000"
-      },
-      {
-        "PowerHint": "INTERACTION",
-        "Node": "CPUPrimeClusterMinFreq",
-        "Duration": 0,
-        "Value": "1370000"
-      },
-      {
-        "PowerHint": "INTERACTION",
         "Node": "CPUEfficiencyClusterMaxFreq",
         "Duration": 0,
         "Value": "1725000"
-      },
-      {
-        "PowerHint": "INTERACTION",
-        "Node": "CPUSuperClusterMaxFreq",
-        "Duration": 0,
-        "Value": "1740000"
-      },
-      {
-        "PowerHint": "INTERACTION",
-        "Node": "CPUPrimeClusterMaxFreq",
-        "Duration": 0,
-        "Value": "2284000"
       },
       {
         "PowerHint": "INTERACTION",

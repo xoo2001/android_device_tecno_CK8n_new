@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster41.vendor
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0.vendor

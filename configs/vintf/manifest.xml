@@ -35,6 +35,11 @@
         <fqname>@4.0::IMapper/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.1::IKeymasterDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOmx/default</fqname>
@@ -137,6 +142,11 @@
         <name>vendor.mediatek.hardware.composer_ext</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IComposerExt/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.keymaster_attestation</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mmagent</name>

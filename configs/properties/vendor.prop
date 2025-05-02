@@ -97,6 +97,11 @@ ro.vendor.tgpa_resolution_tuner=1
 ro.vendor.tgpa_scaler_time=20200407
 ro.vendor.tgpa_scaler_version=1
 
+# DRM
+drm.service.enabled=true
+ro.netflix.bsp_rev=MTK6893-32816-1
+ro.vendor.mtk_widevine_drm_l1_support=1
+
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000

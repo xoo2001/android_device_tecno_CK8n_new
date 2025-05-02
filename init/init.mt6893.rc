@@ -1276,10 +1276,6 @@ service osi /system/bin/osi
     disabled
     oneshot
     #seclabel u:r:osi:s0
-#BSP:add custom factory reset XLQLHBW-12 by jianyun.yang 2021.11.22 start
-on property:persist.vendor.tran.wipedata=1 && property:ro.boot.atm=enable
-    tran_factory_reset
-#BSP:add custom factory reset XLQLHBW-12 by jianyun.yang 2021.11.22 end
 
 #SPD : add XLBYYHBWQ-3103 for memfusion2.2 by zihan.ju 20230821 start
 on property:persist.vendor.swapfile_enable=false

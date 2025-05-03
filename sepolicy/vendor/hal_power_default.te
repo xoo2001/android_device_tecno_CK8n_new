@@ -1,3 +1,14 @@
 # Allow libperfmgr to access Transsion DT2W Nodes
 allow hal_power_default proc_gesture_function:dir r_file_perms;
 allow hal_power_default proc_gesture_function:file rw_file_perms;
+
+# /sys/kernel/ged/hal/gpu_boost_level
+allow hal_power_default sysfs_ged:dir search;
+allow hal_power_default sysfs_ged:file { write open };
+
+# /sys/kernel/fpsgo/fbt/boost_ta
+# /sys/module/mtk_fpsgo/parameters/bhr_opp
+allow hal_power_default sysfs_fpsgo:dir search;
+allow hal_power_default sysfs_fpsgo:file { write open };
+allow hal_power_default sysfs_mtk_fpsgo:dir search;
+allow hal_power_default sysfs_mtk_fpsgo:file { write open };

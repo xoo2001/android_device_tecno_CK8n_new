@@ -1,0 +1,33 @@
+# Audio
+ro.vendor.qti.va_aosp.support               u:object_r:vendor_exported_system_prop:s0 exact bool
+
+# Camera
+cam.egnsavefile.enable                      u:object_r:exported_default_prop:s0
+debuglog.drv                                u:object_r:exported_default_prop:s0
+debuglog.drv.                               u:object_r:exported_default_prop:s0
+demo.                                       u:object_r:exported_default_prop:s0
+ro.mtk_cam_dualzoom_support                 u:object_r:exported_default_prop:s0
+ro.mtk_cam_stereo_camera_support            u:object_r:exported_default_prop:s0
+RUNTIME_OVERRIDE_LOG_LEVEL                  u:object_r:exported_default_prop:s0
+RUNTIME_OVERRIDE_OPENCL_MEM_TYPE            u:object_r:exported_default_prop:s0
+st_repair.debug.                            u:object_r:exported_default_prop:s0
+
+# Debug
+persist.dbg.keep_debugfs_mounted            u:object_r:exported_default_prop:s0 exact bool
+
+# Hardware
+ro.chipname                                 u:object_r:exported_default_prop:s0 exact string
+ro.hardware.chipname                        u:object_r:exported_default_prop:s0 exact string
+ro.mediatek.platform                        u:object_r:exported_default_prop:s0 exact string
+
+# Key
+ro.mtk_key_manager_support                  u:object_r:exported_default_prop:s0
+
+# Mnld
+ro.logsystem.usertype                       u:object_r:build_prop:s0
+
+# SVN
+ro.product.svn                              u:object_r:build_prop:s0
+
+# Vendor aware available
+ro.vendor.aware_available                   u:object_r:vendor_aware_available_prop:s0

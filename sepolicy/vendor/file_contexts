@@ -1,0 +1,22 @@
+# Camera
+/data/vendor/camera_watermark(/.*)?                                                                             u:object_r:vendor_watermark_data_file:s0
+/data/vendor/multicam(/.*)?                                                                                     u:object_r:transsion_camera_data_file:s0
+/sys/devices/platform/(odm/odm:tran_battery|tran_battery)/tran_cam                                              u:object_r:sysfs_tran_cam_file:s0
+/vendor/bin/hw/vendor\.transsion\.hardware\.trancam\.trancamserver@1\.0-service                                 u:object_r:trancamserver_exec:s0
+
+# Charger
+/sys/devices/platform/charger/tran_battery_cycle                                                                u:object_r:sysfs_bat_cycle:s0
+/sys/devices/platform/odm/odm:tran_auto_test/power_supply/tran-auto-test(/.*)                                   u:object_r:sysfs_tran_auto_test:s0
+
+# kmsetkey
+/(vendor|system\/vendor)/bin/kmsetkey_ca.trustonic                                                              u:object_r:trustonic_kmsetkey_ca_exec:s0
+
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.mediatek-libperfmgr                                            u:object_r:hal_power_default_exec:s0
+
+# Tranfs
+/dev/block/sdc62                                                                                                u:object_r:tranfs_block_device:s0
+
+# Vibrator
+/sys/devices/platform/soc/11d03000.i2c/i2c-7/7-0058/leds/vibrator_single(/.*)?                                  u:object_r:sysfs_vibrator:s0
+/vendor/bin/hw/android\.hardware\.vibrator-service\.mediatek\.x6739                                             u:object_r:hal_vibrator_default_exec:s0

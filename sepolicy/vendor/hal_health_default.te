@@ -1,0 +1,9 @@
+# /sys/devices/platform/odm/odm:usb_switch/power_supply/usb_switch/type
+allow hal_health_default sysfs_battery:dir search;
+allow hal_health_default sysfs_battery:file { read open getattr };
+
+# /sys/devices/platform/mtk_ctd/power_supply/mtk_charger_type/type
+allow hal_health_default sysfs_batteryinfo:file { open getattr read };
+
+# /sys/devices/platform/odm/odm:tran_auto_test/power_supply/tran-auto-test/type
+allow hal_health_default sysfs_tran_auto_test:file { read open getattr };

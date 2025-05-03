@@ -1,0 +1,2 @@
+# /sys/firmware/devicetree/base/firmware/android/compatible
+allow misctrl sysfs_dt_firmware_android:file { read open getattr };

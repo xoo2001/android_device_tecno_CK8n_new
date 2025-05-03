@@ -1,0 +1,26 @@
+# Camera
+persist.vendor.camera.                      u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.res.fmq.size               u:object_r:vendor_camera_prop:s0
+vendor.debug.seninf.hs_trail                u:object_r:vendor_mtk_camera_prop:s0
+
+# HWC
+vendor.display.vds_allow_hwc                u:object_r:vendor_hwc_prop:s0
+
+# MDP
+ro.vendor.dp.bypass.mdp                     u:object_r:vendor_mtk_mdp_prop:s0
+vendor.dp.rdma.workaround.enable            u:object_r:vendor_mtk_mdp_prop:s0
+vendor.dp.reduceconfig.disable              u:object_r:vendor_mtk_mdp_prop:s0
+
+# Media
+ro.vendor.mtk_hdr_video_support             u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.smvr.p2batch.                     u:object_r:vendor_mtk_default_prop:s0
+
+# OMX
+mtk.vendor.omx.core.log                     u:object_r:vendor_mtk_omx_core_prop:s0
+
+# TEE
+vendor.tee.googlekey.status                 u:object_r:vendor_mtk_trustonic_tee_prop:s0
+
+# VT
+ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+ro.vendor.vt_hevc_support                   u:object_r:vendor_mtk_default_prop:s0

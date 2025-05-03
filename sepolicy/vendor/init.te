@@ -1,0 +1,2 @@
+# /dev/block/sdc62
+allow init tranfs_block_device:blk_file relabelto;

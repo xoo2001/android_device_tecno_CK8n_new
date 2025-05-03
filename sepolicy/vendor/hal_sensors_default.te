@@ -1,0 +1,14 @@
+# /proc/bootconfig
+allow hal_sensors_default proc_bootconfig:file { read open getattr };
+
+# /sys/firmware/devicetree/base/firmware/android/compatible
+allow hal_sensors_default sysfs_dt_firmware_android:dir search;
+allow hal_sensors_default sysfs_dt_firmware_android:file { read open getattr };
+
+# sdc17 | gsi
+allow hal_sensors_default gsi_metadata_file:dir search;
+
+# /mnt/vendor/nvdata/APCFG/APRDCL/HWMON_3DHALL
+# /mnt/vendor/nvdata/APCFG/APRDCL/FILE_VER
+allow hal_sensors_default nvdata_file:dir search;
+allow hal_sensors_default nvdata_file:file { read open getattr };

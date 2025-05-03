@@ -1,0 +1,3 @@
+# /sys/devices/soc0/soc_id
+allow hal_nfc_default sysfs_soc:dir search;
+allow hal_nfc_default sysfs_soc:file { read open getattr };

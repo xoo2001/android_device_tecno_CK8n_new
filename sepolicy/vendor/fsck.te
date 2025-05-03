@@ -1,0 +1,7 @@
+# /dev/block/sdc62
+allow fsck tranfs_block_device:blk_file { read write open ioctl };
+
+# /sys/devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdc/sdc63/partition
+# /sys/devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdc/queue/zoned
+allow fsck sysfs_devices_block:dir search;
+allow fsck sysfs_devices_block:file { getattr read open };

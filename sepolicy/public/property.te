@@ -2,3 +2,6 @@
 vendor_public_prop(vendor_camera_prop)
 
 vendor_restricted_prop(vendor_exported_system_prop)
+
+# Fingerprint
+system_public_prop(vendor_fingerprint_prop)

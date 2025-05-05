@@ -8,6 +8,9 @@
 /sys/devices/platform/charger/tran_battery_cycle                                                                u:object_r:sysfs_bat_cycle:s0
 /sys/devices/platform/odm/odm:tran_auto_test/power_supply/tran-auto-test(/.*)                                   u:object_r:sysfs_tran_auto_test:s0
 
+# Fingerprint
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-mediatek                                 u:object_r:hal_fingerprint_default_exec:s0
+
 # kmsetkey
 /(vendor|system\/vendor)/bin/kmsetkey_ca.trustonic                                                              u:object_r:trustonic_kmsetkey_ca_exec:s0
 

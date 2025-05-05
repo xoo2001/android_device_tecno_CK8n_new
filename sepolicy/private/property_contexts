@@ -15,6 +15,9 @@ st_repair.debug.                            u:object_r:exported_default_prop:s0
 # Debug
 persist.dbg.keep_debugfs_mounted            u:object_r:exported_default_prop:s0 exact bool
 
+# Fingerprint
+gf.debug.                                   u:object_r:vendor_fingerprint_prop:s0
+
 # Hardware
 ro.chipname                                 u:object_r:exported_default_prop:s0 exact string
 ro.hardware.chipname                        u:object_r:exported_default_prop:s0 exact string

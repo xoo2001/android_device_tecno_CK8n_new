@@ -150,7 +150,7 @@ PRODUCT_PACKAGES += \
     libcurl.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss-V1-ndk_platform.vendor
+    android.hardware.gnss-V1-ndk.vendor
 
 # Health
 PRODUCT_PACKAGES += \

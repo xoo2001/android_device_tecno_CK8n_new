@@ -94,6 +94,9 @@ function blob_fixup {
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
+        vendor/lib*/libMtkOmxCore.so)
+            sed -i "s/mtk.vendor.omx.core.log/ro.vendor.mtk.omx.log\x00\x00/" "$2"
+            ;;
     esac
 }
 

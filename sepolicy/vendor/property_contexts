@@ -16,7 +16,7 @@ ro.vendor.mtk_hdr_video_support             u:object_r:vendor_mtk_default_prop:s
 ro.vendor.smvr.p2batch.                     u:object_r:vendor_mtk_default_prop:s0
 
 # OMX
-mtk.vendor.omx.core.log                     u:object_r:vendor_mtk_omx_core_prop:s0
+ro.vendor.mtk.omx.log                       u:object_r:vendor_mtk_omx_core_prop:s0
 
 # TEE
 vendor.tee.googlekey.status                 u:object_r:vendor_mtk_trustonic_tee_prop:s0

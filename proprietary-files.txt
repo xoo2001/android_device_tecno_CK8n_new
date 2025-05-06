@@ -1646,7 +1646,7 @@ vendor/lib/libneuroeara.so
 vendor/lib/libneuron_graph_delegate.mtk.so
 vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
-vendor/lib/libtflite_mtk.so
+vendor/lib/libtflite_mtk.so;DISABLE_DEPS
 vendor/lib/libvpu5.so
 vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
@@ -1673,7 +1673,7 @@ vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
-vendor/lib64/libtflite_mtk.so
+vendor/lib64/libtflite_mtk.so;DISABLE_DEPS
 vendor/lib64/libvpu5.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
@@ -1768,7 +1768,7 @@ vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
 vendor/lib/libsimlock.so
 vendor/lib/libsimmelock.so
-vendor/lib/libsysenv.so
+vendor/lib/libsysenv.so;DISABLE_DEPS
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
@@ -1797,7 +1797,7 @@ vendor/lib64/librilfusion.so
 vendor/lib64/libsimlock.so
 vendor/lib64/libsimmelock.so
 vendor/lib64/libstorage_otp.so
-vendor/lib64/libsysenv.so
+vendor/lib64/libsysenv.so;DISABLE_DEPS
 vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so

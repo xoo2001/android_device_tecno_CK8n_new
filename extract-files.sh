@@ -114,6 +114,10 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             sed -i "s/mtk.vendor.omx.core.log/ro.vendor.mtk.omx.log\x00\x00/" "$2"
             ;;
+        vendor/lib64/hw/gf_fingerprint.default.so)
+            [ "$2" = "" ] && return 0
+            sed -i 's/libfingerprint.default.so/gf_fingerprint.default.so/' "$2"
+            ;;
         *)
             return 1
             ;;

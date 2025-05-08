@@ -132,6 +132,7 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            grep -q "libcamera_metadata_shim.so" "${2}" || "$PATCHELF" --add-needed "libcamera_metadata_shim.so" "${2}"
             ;;
         vendor/lib64/hw/gf_fingerprint.default.so)
             [ "$2" = "" ] && return 0

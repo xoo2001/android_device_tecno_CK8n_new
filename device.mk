@@ -369,6 +369,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-convert-shared.vendor \
     libbase_shim \
+    libcamera_metadata_shim \
     libhidlbase_shim \
     libprocessgroup_shim \
     libui_shim

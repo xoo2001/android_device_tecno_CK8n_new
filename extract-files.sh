@@ -153,6 +153,10 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             grep -q "libcutils.so" "${2}" || "$PATCHELF" --add-needed "libcutils.so" "${2}"
             ;;
+        vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
+            [ "$2" = "" ] && return 0
+            "$PATCHELF" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            ;;
         *)
             return 1
             ;;

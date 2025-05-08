@@ -367,6 +367,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libshim_sensors \
     libui_shim
 

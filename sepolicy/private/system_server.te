@@ -1,2 +1,7 @@
 # /sys/devices/platform/soc/11d03000.i2c/i2c-7/7-0058/leds/vibrator_single/max_brightness
 allow system_server sysfs_vibrator:file { read open getattr };
+
+allow system_server zygote_tmpfs:file write;
+allow system_server app_zygote_tmpfs:file write;
+
+get_prop(system_server, pih_disable_prop)

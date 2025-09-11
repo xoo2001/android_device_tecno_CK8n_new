@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/X6739
-KERNEL_PATH := device/infinix/X6739-kernel
+DEVICE_PATH := device/tecno/CK8n
+KERNEL_PATH := device/tecno/CK8n-kernel
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -63,7 +63,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 bootconfig
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := x6739u_h931
+TARGET_BOOTLOADER_BOARD_NAME := mt6893
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -106,10 +106,10 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Partitions - Dynamic
 BOARD_SUPER_PARTITION_SIZE := 11378286592
-BOARD_SUPER_PARTITION_GROUPS := infinix_dynamic_partitions
-BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 11374092288 # (BOARD_SUPER_PARTITION_SIZE - 4MB)
+BOARD_SUPER_PARTITION_GROUPS := tecno_dynamic_partitions
+BOARD_TECNO_DYNAMIC_PARTITIONS_SIZE := 11374092288 # (BOARD_SUPER_PARTITION_SIZE - 4MB)
 
-BOARD_INFINIX_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+BOARD_TECNO_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 	system \
     system_ext \
     product \
@@ -210,4 +210,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_FEATURE_HOSTAPD_11AX := true
 
 # Inherit the proprietary files
-include vendor/infinix/X6739/BoardConfigVendor.mk
+include vendor/tecno/CK8n/BoardConfigVendor.mk

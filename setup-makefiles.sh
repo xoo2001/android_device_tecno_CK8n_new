@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=X6739
-VENDOR=infinix
+DEVICE=CK8n
+VENDOR=tecno
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -27,7 +27,7 @@ source "${HELPER}"
 
 function vendor_imports() {
 	cat <<EOF >>"$1"
-		"device/infinix/X6739",
+		"device/tecno/CK8n",
 		"hardware/mediatek",
 		"hardware/mediatek/libmtkperf_client"
 EOF

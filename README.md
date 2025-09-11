@@ -1,1 +1,1 @@
-# Android device tree for Infinix GT 10 Pro 5G (X6739)
+# Android device tree for Tecno Camon 20 Pro 5G (CK8n)

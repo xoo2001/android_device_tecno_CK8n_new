@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=X6739
-VENDOR=infinix
+DEVICE=CK8n
+VENDOR=tecno
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -99,6 +99,13 @@ function blob_fixup {
             "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             grep -q "libhidlbase_shim.so" "$2" || "$PATCHELF" --add-needed "libhidlbase_shim.so" "$2"
+            ;;
+        vendor/bin/mnld)
+            ;&
+        vendor/lib64/libaalservice.so)
+            ;&
+        vendor/lib64/libcam.utils.sensorprovider.so)
+            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v31.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
             [ "$2" = "" ] && return 0

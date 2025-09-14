@@ -330,7 +330,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
-    libsink-mtk.vendor
+    libsink-mtk
     
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -410,8 +410,8 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     libbinder-v32 \
-    libutils-v32 \
-    libutils-v32.transsion
+    libhidlbase-v32 \
+    libutils-v32 
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v32.so \

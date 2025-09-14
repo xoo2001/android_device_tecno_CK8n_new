@@ -329,8 +329,9 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.3.vendor
-
+    android.hardware.radio.config@1.3.vendor \
+    libsink-mtk.vendor
+    
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6893 \
@@ -408,9 +409,13 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libbinder-v31 \
-    libhidlbase-v31 \
-    libutils-v31
+    libbinder-v32 \
+    libutils-v32 \
+    libutils-v32.transsion
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

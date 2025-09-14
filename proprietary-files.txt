@@ -1908,7 +1908,7 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-mediatek.rc
 vendor/etc/init/vendor.goodix.rc
 vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service-mediatek.xml
 vendor/lib/libMcClient.so
-vendor/lib64/hw/gf_fingerprint.default.so
+vendor/lib64/hw/gf_fingerprint.default.so;FIX_SONAME
 vendor/lib64/libMcClient.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
@@ -2920,7 +2920,7 @@ vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-v31.so
 vendor/lib/libfile_op.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mt6893.so
-vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v31.so
+vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v31.so;FIX_SONAME
 vendor/lib64/libfile_op.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so

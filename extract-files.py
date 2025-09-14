@@ -41,19 +41,19 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
-    ('vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron', 'vendor/bin/nfcstackp-vendor', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so', 'vendor/lib64/libtflite_mtk.so'): blob_fixup()
+    ('vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron', 'vendor/bin/nfcstackp-vendor', 'vendor/lib64/libsysenv.so', 'vendor/lib64/libtflite_mtk.so', 'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/bin/hw/camerahalserver', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service'): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v31.so')
         .replace_needed('libbinder.so', 'libbinder-v31.so')
         .replace_needed('libutils.so', 'libutils-v31.so'),
-    ('vendor/bin/mnld', 'vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
+    ('vendor/bin/mnld', 'vendor/lib/libaalservice.so', 'vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
     'vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so': blob_fixup()
         .add_needed('libcamera_metadata_shim.so'),
-    ('vendor/lib64/libsegmentionPre.so'): blob_fixup()
+    ('vendor/lib64/libsegmentionPre.so', 'vendor/lib64/libMegviiHum.so', 'vendor/lib64/libtranssion_bodybeauty.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_createFromHandle')
         .clear_symbol_version('AHardwareBuffer_describe')

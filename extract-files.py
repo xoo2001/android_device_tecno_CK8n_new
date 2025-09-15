@@ -43,11 +43,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
     ('vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron', 'vendor/bin/nfcstackp-vendor', 'vendor/lib64/libsysenv.so', 'vendor/lib64/libtflite_mtk.so', 'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service', 'vendor/bin/meta_tst'): blob_fixup()
         .add_needed('libbase_shim.so'),
-    ('vendor/bin/hw/camerahalserver', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so'): blob_fixup()
-        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
-        .replace_needed('libbinder.so', 'libbinder-v32.so')
-        .replace_needed('libutils.so', 'libutils-v32.so')
-        .add_needed('libhidlbase_shim.so'),
     ('vendor/bin/mnld', 'vendor/lib/libaalservice.so', 'vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()

@@ -67,6 +67,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('liblog.so'),
     'vendor/lib64/mt6893/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
+     ('vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v31.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

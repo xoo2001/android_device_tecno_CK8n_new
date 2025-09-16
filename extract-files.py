@@ -71,6 +71,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcutils.so'),
      ('vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v31.so'),
+        'vendor/bin/hw/camerahalserver': blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v31.so')
+        .replace_needed('libhidlbase.so', 'libhidlbase-v31.so')
+        .replace_needed('libbinder.so', 'libbinder-v31.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

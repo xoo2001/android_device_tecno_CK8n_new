@@ -1871,7 +1871,7 @@ vendor/lib/libasn1c_core.so
 vendor/lib/libasn1c_mapi.so
 vendor/lib/libasn1c_mdmi.so
 vendor/lib/libicd_decoder.so
-vendor/lib/libpkm.so
+vendor/lib/libpkm.so;DISABLE_CHECKELF
 vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_mdmi_v2.8.2.so
 vendor/lib/libtranslator_utils.so
@@ -1879,7 +1879,7 @@ vendor/lib64/libasn1c_core.so
 vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libicd_decoder.so
-vendor/lib64/libpkm.so
+vendor/lib64/libpkm.so;DISABLE_CHECKELF
 vendor/lib64/libtranslator_mapi_v3.0.so
 vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
@@ -2895,7 +2895,7 @@ system_ext/lib/vendor.mediatek.hardware.mtkpower-V1-ndk.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/libcomutils.so
-system_ext/lib64/libimsma.so;DISABLE_DEPS
+system_ext/lib64/libimsma.so
 system_ext/lib64/libimsma_adapt.so
 system_ext/lib64/libimsma_rtp.so
 system_ext/lib64/libimsma_socketwrapper.so
@@ -2903,7 +2903,7 @@ system_ext/lib64/libmtk_vt_service.so
 system_ext/lib64/libmtk_vt_wrapper.so
 system_ext/lib64/libmtkperf_client.so;MODULE_SUFFIX=_system_ext
 system_ext/lib64/libsignal.so
-system_ext/lib64/libsink.so
+system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME
 system_ext/lib64/libsource.so
 system_ext/lib64/libvcodec_cap.so
 system_ext/lib64/libvcodec_capenc.so

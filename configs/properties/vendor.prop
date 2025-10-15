@@ -132,6 +132,10 @@ ro.vendor.tgpa_resolution_tuner=1
 ro.vendor.tgpa_scaler_time=20200407
 ro.vendor.tgpa_scaler_version=1
 
+persist.sys.sf.color_mode=9
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
+
 # DRM
 drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6893-32816-1

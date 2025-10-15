@@ -74,7 +74,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcamera_metadata_shim.so'),
     'vendor/lib64/hw/hwcomposer.mt6893.so': blob_fixup()
         .patchelf_version('0_17_2')
-        .add_needed('libprocessgroup_shim.so'),
+        .add_needed('libprocessgroup_shim.so')
+        .binary_regex_replace(b'OnscreenFingerprintDimLayer', b'SurfaceView[UdfpsCont'),
     ('vendor/lib64/lib3a.ae.stat.so', 'vendor/lib64/lib3a.flash.so', 'vendor/lib64/lib3a.sensors.color.so', 'vendor/lib64/lib3a.sensors.flicker.so', 'vendor/lib64/libaaa_ltm.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
         .add_needed('liblog.so'),
     'vendor/lib64/mt6893/libmnl.so': blob_fixup()

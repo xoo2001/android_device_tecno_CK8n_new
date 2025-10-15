@@ -88,6 +88,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v31.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

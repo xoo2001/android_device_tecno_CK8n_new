@@ -1,0 +1,9 @@
+on boot
+    chown system system /sys/kernel/tran_display/lcm_hbm_state
+    chown system system /proc/fingerprint_status
+
+service vendor.fingerprint-transsion /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.transsion
+    class late_start
+    user system
+    group system input uhid
+    shutdown critical
